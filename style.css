@@ -1,3 +1,14 @@
+html{
+    width: 99.78%;
+}
+
+body{
+    background-color: #1b072d;
+    width: 99.78%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #Top{
     display: inline-flex;
     flex-direction: row;
@@ -5,6 +16,7 @@
     background-color: #c9f2ff;
     border: 2px solid gold;
     justify-content: center;
+    height: 500px;
 }
 
 #Nav{
@@ -17,6 +29,9 @@
 
 .RandomName{
     color: rgb(81, 201, 143);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .RandomName:hover{
@@ -33,23 +48,39 @@
     border-style: solid;
 }
 
-#ToCenter{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.StarterStorySentences{
+    color: #565656;
+    text-shadow: 1px 1px #1b072d;
+    padding: 15px;
 }
 
-#Skillset{
+.SomeCharacter{
+    color: #565656;
+    text-shadow: 1px 1px #1b072d;
+    padding: 15px;
+}
+
+#MostCertainlyTrueInformation{
+    width: 100%;
     display: inline-flex;
-    flex-direction: column;
-    padding-left: 30px;
+    flex-direction: row;
 }
 
 #Email{
     display: block;
     padding: 0.025px;
-    width: 100.1%;
+    width: 100%;
     background-color: #565656;
+}
+
+#ContentBox{
+    display: inline-flex;
+    width: 99%;
+    height: 325px;
+    justify-content: space-around;
+    background-color: #b3fde5;
+    padding-left: 20px;
+    /* border: 2px solid #ff8000; */
 }
 
 /* Dropdown Button */
@@ -72,7 +103,7 @@
     display: none;
     position: absolute;
     background-color: #3dffa5;
-    width: 200px;
+    width: 225px;
     height: 50px;
   }
   
@@ -80,15 +111,16 @@
   .dropdown-content p {
     color: rgb(90, 90, 90);
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     padding-top: 1px;
-    padding-left: 4px;
-    padding-right: 6px;
+    padding-left: 17px;
+    padding-right: 18px;
     padding-bottom: 1px;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content p:hover {background-color: rgb(128, 0, 255, 90); color:rgb(211, 193, 255);}
+  .dropdown-content p:hover {background-color: #ceb9ff; color:rgb(68, 68, 68); text-shadow: 1px 1px #ff8000;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: inline-block;}
@@ -96,36 +128,191 @@
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #5a3e8e;}
 
-.AboutMyself{
+/* .AboutMyself{
     font-size: 30px;
     font-family: cursive;
     font-style: italic;
     color: #ff9d00;
-}
+    background-color: rgb(194, 193, 255);
+} */
 
 .image:hover{
     border: 2px dashed #9a0000;
-    width: 863px;
+    width: 866px;
     height: 497px;
 }
 
-#Me{
-    background-color: rgb(194, 193, 255);
-    padding: 20px;
+.image{
+    height: 500px;
+    width: 870px;
 }
 
-#MyLi{
+#random_btn{
+    width: 300px;
+    margin-right: 285px;
+}
+
+#random_btn2{
+    width: 300px;
+}
+
+.RandomBox {
+    display: flex;
+    width: 750px;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #b3fde5;
+    /* border: 2px solid #1b072d; */
+}
+
+#LetThisBeVerticalPleaseImRunningOutOfDivNames{
+    display: flex;
+    flex-direction: column;
+}
+
+#SpacingForLore{
     display: inline-flex;
     flex-direction: row;
-    width: 90%;
-    border: 2px dashed rgb(52, 152, 104);
-    color:rgb(80, 57, 118);
-    font-size: 15px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-#JustMe{
+#AllAboutLore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 250px;
+    border: 2px solid #1b072d;
+    width: 900px;
+    padding-bottom: 15px;
+}
+
+#CenteringDiv{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+#SpacingForStory{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#AllAboutStory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 250px;
+    border: 2px solid #1b072d;
+    width: 900px;
+    padding-bottom: 15px;
+}
+
+#CenteringDiv2{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+#InterestingLoreContents{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #ff1e00;
+}
+
+#InterestingStoryContents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #ff1e00;
+}
+
+.RandomBox2{
+    display: flex;
+    width: 35%;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #b3fde5;
+    border: 2px solid #1b072d;
+}
+
+#NextSectionHeading {
+    color: #c9f2ff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-shadow: 1px 1px #9a0000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#thyButtonAndMore {
+    display: inline-flex;
+    width: 117.8em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #b3fde5;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.Information{
+    color: #a296ff;
+    text-shadow: 1px 1px black;
+}
+
+#FirstSection{
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgb(200, 247, 255);
+    color:rgb(112, 1, 1);
+    height: 450px;
+    padding: 2px;
+    border: 2px dashed #1b072d;
+}
+
+#SecondSection{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgb(200, 247, 255);
+    color:rgb(112, 1, 1);
+    height: 450px;
+    padding: 2px;
+    border: 2px dashed #1b072d;
+}
+
+#ThirdSection{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgb(200, 247, 255);
+    color:rgb(112, 1, 1);
+    height: 450px;
+    padding: 2px;
+    border: 2px dashed #1b072d;
 }
 
 #Body{
@@ -138,10 +325,41 @@
     height: 100%;
 }
 
+#ProjectBody{
+    background-color: rgb(194, 193, 255);
+    padding-bottom: 20px;
+}
+
+.ProjectHeading{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(194, 193, 255);
+    color: #ff8000;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 1px 1px #1b072d;
+    width: 100%;
+}
+
+.InformationHeader{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #00ff6a;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 1px 1px #1b072d;
+    width: 100%;
+}
+
 #AboutMyProjects{
     display: inline-flex;
     flex-direction: row;
+    width: 100%;
     height: 88%;
+    justify-content: space-evenly;
+    background-color: rgb(194, 193, 255);
 }
 
 #AboutMyProjects img{
@@ -152,7 +370,7 @@
     height: 88%;
     padding: 15px;
     border-left: 2px;
-    border-right: 1px;
+    border-right: 2px;
     border-top: 2px;
     border-bottom: 2px;
     border-color: gold;
@@ -162,7 +380,18 @@
 #ProjectImage2{
     height: 88%;
     padding: 15px;
-    border-left: 1px;
+    border-left: 2px;
+    border-right: 2px;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: gold;
+    border-style: solid;
+}
+
+#ProjectImage3{
+    height: 88%;
+    padding: 15px;
+    border-left: 2px;
     border-right: 2px;
     border-top: 2px;
     border-bottom: 2px;
@@ -174,7 +403,7 @@
     height: 88%;
     padding: 15px;
     border-left: 2px;
-    border-right: 1px;
+    border-right: 2px;
     border-top: 2px;
     border-bottom: 2px;
     border-color: rgb(255, 0, 119);
@@ -185,7 +414,19 @@
 #ProjectImage2:hover{
     height: 88%;
     padding: 15px;
-    border-left: 1px;
+    border-left: 2px;
+    border-right: 2px;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: rgb(255, 0, 119);
+    border-radius: 20px;
+    border-style: groove;
+}
+
+#ProjectImage3:hover{
+    height: 88%;
+    padding: 15px;
+    border-left: 2px;
     border-right: 2px;
     border-top: 2px;
     border-bottom: 2px;
